@@ -21,7 +21,7 @@ MODIFY odr_date DATE DEFAULT CURRENT_DATE;
 
 ## Question 3
 
-![Alt text](https://drive.google.com/file/d/1vssQPisUDNRLg-EzwGG9Yrb95Gcot-VS/view?usp=drive_link)
+![Alt text](image.png)
 
 <br />
 
@@ -55,7 +55,7 @@ desc orders
 
 ## Question 4
 
-![Alt text](https://drive.google.com/file/d/1aBKvLNGnJpdDosr2nDdtmPVljTxXRgDy/view?usp=sharing)
+![Alt text](image2.png)
 
 <br />
 
