@@ -55,7 +55,7 @@ desc orders
 
 ## Question 4
 
-![Alt text](https://drive.google.com/file/d/1aBKvLNGnJpdDosr2nDdtmPVljTxXRgDy/view?usp=drive_link)
+![Alt text](https://drive.google.com/file/d/1aBKvLNGnJpdDosr2nDdtmPVljTxXRgDy/view?usp=sharing)
 
 <br />
 
