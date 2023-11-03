@@ -1,9 +1,9 @@
-<a href="https://github.com/IzyanIzzatiK/SECD2523-Database/stargazers"><img src="https://img.shields.io/github/stars/IzyanIzzatiK/SECD2523-Database" alt="Stars Badge"/></a>
-<a href="https://github.com/IzyanIzzatiK/SECD2523-Database/network/members"><img src="https://img.shields.io/github/forks/IzyanIzzatiK/SECD2523-Database" alt="Forks Badge"/></a>
-<a href="https://github.com/IzyanIzzatiK/SECD2523-Database/pulls"><img src="https://img.shields.io/github/issues-pr/IzyanIzzatiK/SECD2523-Database" alt="Pull Requests Badge"/></a>
-<a href="https://github.com/IzyanIzzatiK/SECD2523-Database"><img src="https://img.shields.io/github/issues/IzyanIzzatiK/SECD2523-Database" alt="Issues Badge"/></a>
-<a href="https://github.com/IzyanIzzatiK/SECD2523-Database/graphs/contributors"><img alt="GitHub contributors" src="https://img.shields.io/github/contributors/IzyanIzzatiK/SECD2523-Database?color=2b9348"></a>
-![Visitors](https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2FIzyanIzzatiK%2SECD2523-Database&labelColor=%23d9e3f0&countColor=%23697689&style=flat)
+<a href="https://github.com/IzyanIzzatiK/SECD2523-03/stargazers"><img src="https://img.shields.io/github/stars/IzyanIzzatiK/SECD2523-03" alt="Stars Badge"/></a>
+<a href="https://github.com/IzyanIzzatiK/SECD2523-03/network/members"><img src="https://img.shields.io/github/forks/IzyanIzzatiK/SECD2523-03" alt="Forks Badge"/></a>
+<a href="https://github.com/IzyanIzzatiK/SECD2523-03/pulls"><img src="https://img.shields.io/github/issues-pr/IzyanIzzatiK/SECD2523-03" alt="Pull Requests Badge"/></a>
+<a href="https://github.com/IzyanIzzatiK/SECD2523-03"><img src="https://img.shields.io/github/issues/IzyanIzzatiK/SECD2523-03" alt="Issues Badge"/></a>
+<a href="https://github.com/IzyanIzzatiK/SECD2523-03/graphs/contributors"><img alt="GitHub contributors" src="https://img.shields.io/github/contributors/IzyanIzzatiK/SECD2523-03?color=2b9348"></a>
+![Visitors](https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2FIzyanIzzatiK%2SECD2523-03&labelColor=%23d9e3f0&countColor=%23697689&style=flat)
 
 # Welcome to Database subject!
 
