@@ -22,7 +22,7 @@
   <tr>
     <td>3</td>
     <td>CAPYBARA</td>
-    <td></td>
+    <td>11/02/23 22:00:00</td>
     <th><a href="submissions/lab1/c4pybara" ><img src="../../project/images/xqc.gif" width="24px" height="24px"></a></th>
   </tr>
   <tr>
