@@ -1,6 +1,6 @@
 # Guide
 ## Crete your own file
-add file -> create new file -> name your file
+click SPICEGIRLS file -> add file -> create new file -> name your file
 ### How to name your file
 name your file tulis name sendiri then tulis slash (/) then tulis .md
 
