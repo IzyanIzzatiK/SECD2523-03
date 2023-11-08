@@ -21,8 +21,8 @@
   </tr>
   <tr>
     <td>3</td>
-    <td>goats</td>
+    <td>GOATS</td>
     <td></td>
-    <th><a href="submissions/lab2/goats/" ><img src="../../project/images/folder.png" width="24px" height="24px"></a></th>
+    <th><a href="submissions/lab2/GOATS/" ><img src="../../project/images/folder.png" width="24px" height="24px"></a></th>
   </tr>
 </table>
