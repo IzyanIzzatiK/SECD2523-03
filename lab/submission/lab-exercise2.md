@@ -47,6 +47,6 @@
     <td>7</td>
     <td>CEM & HEBAK</td>
     <td></td>
-    <th><a href="submissions/lab2/CEM & HEBAK" ><img src="../../project/images/folder.png" width="24px" height="24px"></a></th>
+    <th><a href="submissions/lab2/Cem%20%26%20Hebak" ><img src="../../project/images/folder.png" width="24px" height="24px"></a></th>
   </tr>
 </table>
