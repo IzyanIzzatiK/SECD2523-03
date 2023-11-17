@@ -11,7 +11,7 @@
     <td>1</td>
     <td>c4pybaraaaa</td>
     <td></td>
-    <th><a href="project/phase 1/submission/capybara!" ><img src="../../project/images/funny-cat.gif" width="24px" height="24px"></a></th>
+    <th><a href="/phase 1/submission/capybara!" ><img src="../../project/images/funny-cat.gif" width="24px" height="24px"></a></th>
   </tr>
   <tr>
     <td>2</td>
