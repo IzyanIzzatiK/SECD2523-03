@@ -17,7 +17,7 @@
     <td>2</td>
     <td>PPG</td>
     <td></td>
-    <th><a href="submissions/lab3"><img src="../../project/images/http://surl.li/ohjxq.png" width="24px" height="24px"></a></th>
+    <th><a href="submissions/lab3"><img src="../../project/images/Chelsea_FC.svg.png" width="24px" height="24px"></a></th>
   </tr>
   <tr>
     <td>3</td>
