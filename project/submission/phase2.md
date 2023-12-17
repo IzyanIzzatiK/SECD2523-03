@@ -29,6 +29,6 @@
     <td>4</td>
     <td>PCK</td>
     <td></td>
-    <th><a href="../phase%202/submission" ><img src="../images/folder.png" width="24px" height="24px"></a></th>
+    <th><a href="../phase%202/submission/PCK" ><img src="../images/folder.png" width="24px" height="24px"></a></th>
   </tr>
 </table>
