@@ -42,7 +42,7 @@
     <td>5</td>
     <td>PCK</td>
     <td></td>
-    <th><a href="submissions/lab3/pck"><img src="../../project/images/folder.png" width="24px" height="24px"></a></th>
+    <th><a href="submissions/lab3/PCK"><img src="../../project/images/folder.png" width="24px" height="24px"></a></th>
   </tr>
   <tr>
     <td>4</td>
