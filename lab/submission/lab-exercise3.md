@@ -59,6 +59,6 @@
     <td>9</td>
     <td>YGz</td>
     <td></td>
-    <th><a href="submissions/lab3"><img src="../../project/images/folder.png" width="24px" height="24px"></a></th>
+    <th><a href="submissions/lab3"><img src="../../project/images/ygz.png" width="24px" height="24px"></a></th>
   </tr>
 </table>
