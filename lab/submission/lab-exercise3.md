@@ -26,27 +26,33 @@
     <th><a href="submissions/lab3"><img src="../../project/images/folder.png" width="24px" height="24px"></a></th>
   </tr>
   <tr>
-    <td>3</td>
+    <td>4</td>
     <td>GOATS</td>
     <td></td>
     <th><a href="submissions/lab3"><img src="../../project/images/folder.png" width="24px" height="24px"></a></th>
   </tr>
     <tr>
-    <td>4</td>
+    <td>5</td>
     <td>NETNERD</td>
     <td></td>
     <th><a href="submissions/lab3"><img src="../../project/images/folder.png" width="24px" height="24px"></a></th>
   </tr>
   </tr>
     <tr>
-    <td>5</td>
+    <td>6</td>
     <td>PCK</td>
     <td></td>
     <th><a href="submissions/lab3/PCK"><img src="../../project/images/folder.png" width="24px" height="24px"></a></th>
   </tr>
   <tr>
-    <td>4</td>
+    <td>7</td>
     <td>NETNERD</td>
     <td></td>
     <th><a href="submissions/lab3/YGz"><img src="../../project/images/folder.png" width="24px" height="24px"></a></th>
+  <tr>
+    <td>8</td>
+    <td>SPICE GIRLS</td>
+    <td></td>
+    <th><a href="submissions/lab3/SPICEGIRLS"><img src="../../project/images/folder.png" width="24px" height="24px"></a></th>
+  </tr>
 </table>
