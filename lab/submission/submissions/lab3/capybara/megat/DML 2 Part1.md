@@ -10,7 +10,7 @@
 ### Question 3
 `SELECT * FROM items;`
 
-## 2 Part 2
+## Part 2
 
 ### Question 1
 `SELECT ctr_number || ' ' || first_name || ' ' ||  last_name || ' ' ||  email || ' ' || phone_number from customers;`
