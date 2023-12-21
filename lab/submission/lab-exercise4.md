@@ -11,7 +11,7 @@
     <td>1</td>
     <td>capybaraaa</td>
     <td></td>
-    <th><a href="submissions/lab4/Capybara"><img src="../../project/images/Tottenham_Hotspur.svg.png" width="24px" height="24px"></a></th>
+    <th><a href="submissions/lab4/Capybara"><img src="../../project/images/Tottenham-Hotspur.jpg" width="24px" height="24px"></a></th>
   </tr>
   <tr>
     <td>2</td>
