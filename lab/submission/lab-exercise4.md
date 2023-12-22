@@ -17,7 +17,7 @@
     <td>2</td>
     <td>PPG</td>
     <td></td>
-    <th><a href="submissions/lab4/PPG"><img src="../../project/images/pp.png" width="30px" height="30px"></a></th>
+    <th><a href="submissions/lab4"><img src="../../project/images/folder.png" width="24px" height="24px"></a></th>
   </tr>
   <tr>
     <td>3</td>
