@@ -37,4 +37,10 @@
     <td></td>
     <th><a href="submissions/lab4"><img src="../../project/images/floder.png" width="24px" height="24px"></a></th>
   </tr>
+  <tr>
+    <td>6</td>
+    <td>GOATS</td>
+    <td></td>
+    <th><a href="submissions/lab4/GOATS"><img src="../../project/images/floder.png" width="24px" height="24px"></a></th>
+  </tr>
 </table>
