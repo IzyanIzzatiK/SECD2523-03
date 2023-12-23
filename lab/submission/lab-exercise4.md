@@ -11,7 +11,7 @@
     <td>1</td>
     <th><a href="submissions/lab4/Capybara"><img src="../../project/images/Untitled%20design%20(1).gif" width="80px" height="40px"></a></th>
     <td></td>
-    <th><a href="submissions/lab4/Capybara"><img src="../../project/images/Tottenham-Hotspur.jpg" width="40px" height="30px"></a></th>
+    <th><a href="submissions/lab4/Capybara"><img src="../../project/images/Tottenham-Hotspur.jpg" width="60px" height="30px"></a></th>
   </tr>
   <tr>
     <td>2</td>
