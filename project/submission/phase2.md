@@ -9,37 +9,30 @@
   </tr>
   <tr>
     <td>1</td>
-    <td>Hello World</td>
+    <td>PPG</td>
     <td></td>
-    <th><a href="../phase%202/submission" ><img src="../images/folder.png" width="24px" height="24px"></a></th>
+    <th><a href="../phase%202/submission/PPG/" ><img src="../images/folder.png" width="24px" height="24px"></a></th>
   </tr>
   <tr>
     <td>2</td>
-    <td>PPG</td>
-    <td></td>
-    <th><a href="../phase%202/submission" ><img src="../images/folder.png" width="24px" height="24px"></a></th>
-  </tr>
-  <tr>
-    <td>3</td>
-    <td>Power Ranger</td>
-    <td></td>
-    <th><a href="../phase%202/submission" ><img src="../images/folder.png" width="24px" height="24px"></a></th>
-  </tr>
-  <tr>
-    <td>4</td>
     <td>PCK</td>
     <td></td>
     <th><a href="../phase%202/submission/PCK" ><img src="../images/folder.png" width="24px" height="24px"></a></th>
   </tr>
-   <td>5</td>
+   <td>3</td>
     <td>NetNerd</td>
     <td></td>
-    <th><a href="../phase%202/submission/PCK" ><img src="../images/folder.png" width="24px" height="24px"></a></th>
+    <th><a href="../phase%202/submission/NETNERD" ><img src="../images/folder.png" width="24px" height="24px"></a></th>
   </tr>
   <tr>
     <td>6</td>
     <td>CEM&HEBAK</td>
     <td></td>
     <th><a href="../phase%202/submission/CEM&HEBAK" ><img src="../images/folder.png" width="24px" height="24px"></a></th>
+  </tr><tr>
+    <td>7</td>
+    <td>capyBoros</td>
+    <td></td>
+    <th><a href="../phase%202/submission/capyboro" ><img src="../images/giphy.gif" width="24px" height="24px"></a></th>
   </tr>
 </table>
