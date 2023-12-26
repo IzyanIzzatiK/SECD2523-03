@@ -35,7 +35,7 @@
     <td>5</td>
     <td>SPICE GIRLS</td>
     <td></td>
-    <th><a href="submissions/lab4"><img src="../../project/images/floder.png" width="24px" height="24px"></a></th>
+    <th><a href="submissions/lab4/SPICE%20GIRLS"><img src="../../project/images/folder.png" width="24px" height="24px"></a></th>
   </tr>
   <tr>
     <td>6</td>
