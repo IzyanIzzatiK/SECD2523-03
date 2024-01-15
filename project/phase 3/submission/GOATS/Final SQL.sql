@@ -5,14 +5,14 @@ CREATE TABLE UserType (
 
 CREATE TABLE Users (
     UserID NUMBER PRIMARY KEY,
-    F_Name VARCHAR2(50),
-    L_Name VARCHAR2(50),
-    Address VARCHAR2(255),
-    City VARCHAR2(50),
-    State VARCHAR2(50),
-    Postcode VARCHAR2(20),
-    Email VARCHAR2(100),
-    UserTypeID NUMBER,
+    F_Name VARCHAR2(50) NOT NULL,
+    L_Name VARCHAR2(50) NOT NULL,
+    Address VARCHAR2(255) NOT NULL,
+    City VARCHAR2(50) NOT NULL,
+    State VARCHAR2(50) NOT NULL,
+    Postcode VARCHAR2(20) NOT NULL,
+    Email VARCHAR2(100) NOT NULL,
+    UserTypeID NUMBER NOT NULL,
     CONSTRAINT fk_UserType FOREIGN KEY (UserTypeID) REFERENCES UserType(UserTypeID)
 );
 
@@ -31,76 +31,75 @@ CREATE TABLE NormalUser (
 
 CREATE TABLE Admin (
     UserID NUMBER PRIMARY KEY,
-    Role VARCHAR2(50),
+    Role VARCHAR2(50) NOT NULL,
     CONSTRAINT fk_Admin_User FOREIGN KEY (UserID) REFERENCES Users(UserID)
 );
 
 
 CREATE TABLE EventOrganizer (
     UserID NUMBER PRIMARY KEY,
-     Social_Media VARCHAR2(50),
+    Organization_Name VARCHAR2(100) NOT NULL,
+    Social_Media VARCHAR2(50),
     CONSTRAINT fk_EventOrganizer_User FOREIGN KEY (UserID) REFERENCES Users(UserID)
 );
 
 CREATE TABLE Event (
     EventID NUMBER PRIMARY KEY,
-    UserID NUMBER,
-    Event_Description VARCHAR2(255),
-    Event_Location VARCHAR2(100),
-    Event_Type VARCHAR2(50),
-    Number_Audience NUMBER,
-    Is_Approve VARCHAR2(1),
-    Event_Name VARCHAR2(100),
+    UserID NUMBER NOT NULL,
+    Event_Description VARCHAR2(255) NOT NULL,
+    Event_Location VARCHAR2(100) NOT NULL, 
+    Event_Type VARCHAR2(50) NOT NULL,
+    Number_Audience NUMBER NOT NULL,
+    Is_Approve VARCHAR2(1) DEFAULT 'n',
+    Event_Name VARCHAR2(100) NOT NULL,
     CONSTRAINT fk_Event_User FOREIGN KEY (UserID) REFERENCES Users(UserID)
 );
 
 CREATE TABLE EventTime (
     EventID NUMBER PRIMARY KEY,
-    Start_Time TIMESTAMP,
-    End_Time TIMESTAMP,
+    Start_Time TIMESTAMP NOT NULL,
+    End_Time TIMESTAMP NOT NULL,
     CONSTRAINT fk_EventTime_Event FOREIGN KEY (EventID) REFERENCES Event(EventID)
 );
 
 CREATE TABLE Feedback (
     FeedbackID NUMBER PRIMARY KEY,
-    UserID NUMBER,
-    EventID NUMBER,
+    UserID NUMBER NOT NULL,
+    EventID NUMBER NOT NULL,
     Feedback_Text VARCHAR2(500),
-    Timestamp TIMESTAMP,
+    Timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     CONSTRAINT fk_Feedback_User FOREIGN KEY (UserID) REFERENCES Users(UserID),
     CONSTRAINT fk_Feedback_Event FOREIGN KEY (EventID) REFERENCES Event(EventID)
 );
 
 CREATE TABLE PaymentMethod (
     MethodID NUMBER PRIMARY KEY,
-    Payment_Method VARCHAR2(50)
+    Payment_Method VARCHAR2(50) NOT NULL
 );
-
-
 
 CREATE TABLE Payment (
     PaymentID NUMBER PRIMARY KEY,
-    UserID NUMBER,
-    MethodID NUMBER,
-    Amount NUMBER,
-    Timestamp TIMESTAMP,
+    UserID NUMBER NOT NULL,
+    MethodID NUMBER NOT NULL,
+    Amount NUMBER NOT NULL CHECK (Amount >= 0),
+    Timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     CONSTRAINT fk_Payment_User FOREIGN KEY (UserID) REFERENCES Users(UserID),
     CONSTRAINT fk_Payment_Method FOREIGN KEY (MethodID) REFERENCES PaymentMethod(MethodID)
 );
 
 CREATE TABLE TicketType (
     Ticket_TypeID NUMBER PRIMARY KEY,
-    Ticket_Type VARCHAR2(50)
+    Ticket_Type VARCHAR2(50) NOT NULL
 );
 
 CREATE TABLE Ticket (
     TicketID NUMBER PRIMARY KEY,
-    UserID NUMBER,
-    PaymentID NUMBER,
-    EventID NUMBER,
-    Ticket_TypeID NUMBER,
-    Price NUMBER(10, 2),
-    Date_of_Purchase DATE,
+    UserID NUMBER NOT NULL,
+    PaymentID NUMBER NOT NULL,
+    EventID NUMBER NOT NULL,
+    Ticket_TypeID NUMBER NOT NULL,
+    Price NUMBER(10, 2) NOT NULL CHECK (Price >= 0),
+    Date_of_Purchase DATE DEFAULT CURRENT_DATE,
     CONSTRAINT fk_Ticket_User FOREIGN KEY (UserID) REFERENCES Users(UserID),
     CONSTRAINT fk_Ticket_Payment FOREIGN KEY (PaymentID) REFERENCES Payment(PaymentID),
     CONSTRAINT fk_Ticket_Event FOREIGN KEY (EventID) REFERENCES Event(EventID),
@@ -109,10 +108,10 @@ CREATE TABLE Ticket (
 
 CREATE TABLE Report (
     ReportID NUMBER PRIMARY KEY,
-    EventID NUMBER, 
-    UserID NUMBER,
-    ReportTitle VARCHAR2(100),
-    ReportData CLOB,
+    EventID NUMBER NOT NULL, 
+    UserID NUMBER NOT NULL,
+    ReportTitle VARCHAR2(100) NOT NULL,
+    ReportData CLOB NOT NULL,
     Timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     CONSTRAINT fk_Report_User FOREIGN KEY (UserID) REFERENCES Users(UserID),
     CONSTRAINT fk_Report_Event FOREIGN KEY (EventID) REFERENCES Event(EventID)
@@ -252,21 +251,12 @@ VALUES (102, 'Event Admin');
 INSERT INTO Admin (UserID, Role)
 VALUES (105, 'Technical Admin');
 
--- Inserting data into EventOrganizer table
-INSERT INTO EventOrganizer (UserID, Social_Media)
-VALUES (108, 'Facebook'); 
-
-INSERT INTO EventOrganizer (UserID, Social_Media)
-VALUES (111, 'Instagram'); 
-
-INSERT INTO EventOrganizer (UserID, Social_Media)
-VALUES (114, 'Twitter'); 
-
-INSERT INTO EventOrganizer (UserID, Social_Media)
-VALUES (117, 'LinkedIn'); 
-
-INSERT INTO EventOrganizer (UserID, Social_Media)
-VALUES (120, 'YouTube'); 
+-- Inserting data into EventOrganizer table with popular Organization_Names
+INSERT INTO EventOrganizer (UserID, Organization_Name, Social_Media) VALUES (108, 'EventPro', 'Facebook');
+INSERT INTO EventOrganizer (UserID, Organization_Name, Social_Media) VALUES (111, 'GlobalEvents', 'Instagram');
+INSERT INTO EventOrganizer (UserID, Organization_Name, Social_Media) VALUES (114, 'EpicEntertainment', 'Twitter');
+INSERT INTO EventOrganizer (UserID, Organization_Name, Social_Media) VALUES (117, 'PrimePromotions', 'LinkedIn');
+INSERT INTO EventOrganizer (UserID, Organization_Name, Social_Media) VALUES (120, 'SpectacularShows', 'YouTube');
 
 -- Inserting data into Event table
 INSERT  ALL
@@ -408,7 +398,6 @@ INSERT ALL
     INTO Ticket (TicketID, UserID, PaymentID, EventID, Ticket_TypeID, Price, Date_of_Purchase) VALUES (20, 120, 20, 220, 2, 60.00, TO_DATE('2025-03-25 17:00:00', 'YYYY-MM-DD HH24:MI:SS'))
 SELECT 1 FROM dual;
 
--- Inserting data into Report table
 INSERT ALL
     INTO Report (ReportID, EventID, UserID, ReportTitle, ReportData, Timestamp) VALUES (1, 201, 101, 'Health and Wellness Seminar Report', TO_CLOB('Report content for Health and Wellness Seminar.'), CURRENT_TIMESTAMP)
     INTO Report (ReportID, EventID, UserID, ReportTitle, ReportData, Timestamp) VALUES (2, 202, 113, 'Cultural Festival Report', TO_CLOB('Report content for Cultural Festival.'), CURRENT_TIMESTAMP)
@@ -425,4 +414,3 @@ INSERT ALL
     INTO Report (ReportID, EventID, UserID, ReportTitle, ReportData, Timestamp) VALUES (13, 219, 119, 'Automotive Expo Report', TO_CLOB('Report content for Automotive Expo.'), CURRENT_TIMESTAMP)
     INTO Report (ReportID, EventID, UserID, ReportTitle, ReportData, Timestamp) VALUES (14, 220, 120, 'Tech Expo 2024 Report', TO_CLOB('Report content for Tech Expo 2024.'), CURRENT_TIMESTAMP)
 SELECT 1 FROM dual;
-
