@@ -15,20 +15,14 @@
   </tr>
   <tr>
     <td>2</td>
-    <td>Pirate King</td>
+    <td>CEM&HEBAKr</td>
     <td></td>
     <th><a href="../phase%203/submission" ><img src="../images/folder.png" width="24px" height="24px"></a></th>
   </tr>
   <tr>
     <td>3</td>
-    <td>Power Ranger</td>
+    <td>KapiBara</td>
     <td></td>
-    <th><a href="../phase%203/submission" ><img src="../images/folder.png" width="24px" height="24px"></a></th>
-  </tr>
-  <tr>
-    <td>4</td>
-    <td>CEM&HEBAKr</td>
-    <td></td>
-    <th><a href="../phase%203/submission" ><img src="../images/folder.png" width="24px" height="24px"></a></th>
+    <th><a href="../phase%203/submission/capybara" ><img src="../images/folder.png" width="24px" height="24px"></a></th>
   </tr>
 </table>
