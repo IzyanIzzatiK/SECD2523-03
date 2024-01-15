@@ -103,7 +103,7 @@ ADD CONSTRAINT eventID_fk4 FOREIGN KEY (eventID) REFERENCES EVENT;
 ALTER TABLE PAST_EVENT
 ADD CONSTRAINT eventID_fk5 FOREIGN KEY (eventID) REFERENCES EVENT;
 
--- Here lies Adding Shit Ton of Data
+-- Here lies Adding Ton of Data
 
 INSERT INTO PARTICIPANT VALUES ('P001', 'John Doe', 'john.doe@example.com', '123-456-7890'); 
 INSERT INTO PARTICIPANT VALUES ('P002', 'Jane Smith', 'jane.smith@example.com', '987-654-3210');
@@ -192,7 +192,7 @@ INSERT INTO EVENT VALUES ('EVT020', 'Dance Performance', 'Dance Theater', 'dance
 -- Here lies going booking an event
 
 -- Free Event
--- Lets say user with the id 'P001' registered for event with id 'EVT002'
+-- Lets say user with the id 'P001' until 'P009' registered for event with id 'EVT002'
 -- Their verification id will be automatically generated
 INSERT INTO BOOKING VALUES (DBMS_RANDOM.STRING('L', 15), SYSDATE,'P001','EVT002');
 INSERT INTO BOOKING VALUES (DBMS_RANDOM.STRING('L', 15), SYSDATE,'P002','EVT002');
@@ -207,7 +207,7 @@ INSERT INTO BOOKING VALUES (DBMS_RANDOM.STRING('L', 15), SYSDATE,'P009','EVT002'
 -- Paid Event
 -- Lets say user with the id 'P001' registered for event with id 'EVT001'
 -- Their verification id will be automatically generated
-INSERT INTO BOOKING VALUES (DBMS_RANDOM.STRING('L', 15), SYSDATE,'P001','EVT001'); -- generated verification id abecipqggkutwtu
+INSERT INTO BOOKING VALUES ('abecipqggkutwtu', SYSDATE,'P001','EVT001'); -- generated verification id abecipqggkutwtu
 
 -- Pay Using Online Banking
 INSERT INTO PAYMENT VALUES ('PYT001', 'Online Banking', 'abecipqggkutwtu', 'P001', 'EVT001');
@@ -263,6 +263,15 @@ ORDER BY
 
 
 -- Here lies the most profitable event
+INSERT INTO BOOKING VALUES ('abecipqggkutwtz', SYSDATE,'P002','EVT001'); -- generated verification id abecipqggkutwtz
+INSERT INTO PAYMENT VALUES ('PYT002', 'Online Banking', 'abecipqggkutwtz', 'P002', 'EVT001');
+
+INSERT INTO BOOKING VALUES ('abecipqggkutwtp', SYSDATE,'P003','EVT001'); -- generated verification id abecipqggkutwtp
+INSERT INTO PAYMENT VALUES ('PYT003', 'Online Banking', 'abecipqggkutwtp', 'P003', 'EVT001');
+
+INSERT INTO BOOKING VALUES ('abecipqggkutwto', SYSDATE,'P004','EVT001'); -- generated verification id abecipqggkutwto
+INSERT INTO PAYMENT VALUES ('PYT004', 'Online Banking', 'abecipqggkutwto', 'P004', 'EVT001');
+
 SELECT
     E.eventID,
     E.name AS eventName,
@@ -280,6 +289,8 @@ ORDER BY
     participantsCount DESC
 FETCH FIRST 1 ROWS ONLY;
 
+
+
 -- Populate UPCOMING_EVENT and PAST_EVENT tables based on the startingDate
 
 INSERT INTO UPCOMING_EVENT (calendarID, eventID, startingDate)
@@ -293,9 +304,4 @@ SELECT c.calendarID, e.eventID, c.startingDate
 FROM CALENDAR c
 JOIN EVENT e ON c.eventID = e.eventID
 WHERE c.startingDate <= TO_DATE('2024-01-15', 'YYYY-MM-DD');
-
-
-
-
-
 
