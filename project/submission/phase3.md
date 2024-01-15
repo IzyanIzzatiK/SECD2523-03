@@ -33,7 +33,7 @@
   </tr>
   <tr>
     <td>5</td>
-    <td>YGz</td>
+    <td>PCK</td>
     <td></td>
     <th><a href="../phase%203/submission/PCK" ><img src="../images/folder.png" width="24px" height="24px"></a></th>
   </tr>
